@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background-color: darkgray;
+}
+
+body > h1 {
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    background-color: gray;
+}
+
+table h1 {
+    margin-left: 5vw;
+    background-color: darkgreen;
+    font-style: italic;
+}
+
+table h2 {
+    margin-left: 5vw;
+    background-color: pink;
+    font-style: italic;
+}
+
+table h3 {
+    text-decoration: underline;
+    font-family:  Chancery L, cursive;
+}
+
+table p {
+    font-style: italic;
+}
+
+table {
+    background-color: lightblue;
+    margin-top: 40px;
+    margin: auto;
+    width: 70%;
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100%;
+}
+
+table td {
+    border:green;
+    border-style: dotted;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+table ul {
+    padding: 0;
+    list-style: square;
+}
+
+table ul li {
+    position: relative;
+}
+
+table ul li > span {
+    position: absolute;
+    font-family:  Chancery L, cursive;
+    top: 0;
+    right: 0;
+}
+
+ol li{
+    list-style-type: decimal
+}
+
+nav {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+}
+
+nav li {
+    width: 10vw;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    background-color: #DDDDDD;
+    border-style: inset;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li:hover{
+    background-color: green;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    margin-left: 2vw;
+}
+
+q {
+    margin-left: 3vw;
+}
+
+.favorite {
+    border: dotted pink;
+    border-radius: 30px;
+}
+
+table li > span:after {
+    content: " €";
+}

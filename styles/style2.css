@@ -44,17 +44,27 @@ table ol {
     list-style-position: inside;
     text-align: center;
 }
+table ol > li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
 table ol > li > h4 {
     margin-top: 0;
     margin-bottom: 0;
 }
 table ol > li > p {
+    display: inline;
     margin-top: 0;
-    margin-bottom: 15px;
+}
+table ol > li > span:after {
+    content: "€";
 }
 table ul > li {
     position: relative;
     list-style-type: none;
+}
+table ul > li.favorite {
+    min-height: 50px;
 }
 table ul > li.favorite::before {
     content: "";
@@ -78,10 +88,10 @@ table ul > li.favorite::after {
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-table h2::first-letter, table h3::first-letter, table h4::first-letter, table p::first-letter {
+h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, p::first-letter {
     text-transform: uppercase;
 }
-table td > img {
+table img {
     display: block;
     width: 100%;
     max-width: 350px;
@@ -105,6 +115,9 @@ table td > h2 + p {
     margin-bottom: 25px;
     font-weight: 200;
 }
+table ul hr {
+    display: none;
+}
 table ul > li > p {
     font-weight: 400;
 }
@@ -112,14 +125,19 @@ table ul > li > span {
     position: absolute;
     top: 0;
     right: 0;
+    border: none !important;
 }
 table ul > li > span:after {
     content: " €";
 }
-table ul > li > h3, table ul > li > span {
+table ul > li > h3, table ul > li > h3 > a, table ul > li > span {
     font-weight: bold;
     font-size: 1.25em;
+    text-decoration: none;
     border-bottom: 2px solid #EB5E28;
+}
+table ul > li > h3 > a:hover {
+    color: #EB5E28;
 }
 table ul li > h3 > span {
     font-size: 0.75em;
