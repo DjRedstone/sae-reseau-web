@@ -50,7 +50,7 @@ table td {
     padding-right: 25px;
 }
 
-table ul {
+table ul :not(li br){
     padding: 0;
     list-style: square;
 }
@@ -119,4 +119,30 @@ q {
 
 table li > span:after {
     content: " €";
+}
+#main {
+    text-align: center;
+}
+#main li {
+    list-style-type: none;
+}
+body #main{
+    background-color: gray;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+#main table{
+    background-color: lightblue;
+    margin-top: 40px;
+    margin: auto;
+    width: 70%;
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100%;
+}
+#main table td, #main table th{
+    border: groove pink;
 }
