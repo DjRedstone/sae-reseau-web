@@ -29,8 +29,8 @@ table ul li {
 h1 {
     text-align: center;
 }
-#vin ul > li,#sans_alc ul > li {
-    list-style-type: disc;
+#vin ul > li,#sans_alc ul > li{
+    list-style-type: none;
 }
 hr {
     height: 3px;
@@ -95,4 +95,20 @@ li.favorite::after{
 img{
     width: 50%;
     
+}
+#main {
+    text-align: center;
+}
+#main li {
+    list-style-type: none;
+}
+body #main{
+    background-color: #fefae0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+#main td, th{
+    border: double black;
 }
