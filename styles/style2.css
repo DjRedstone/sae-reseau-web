@@ -32,7 +32,7 @@ table {
     margin: 125px auto;
     background-color: #403D39;
 }
-table, td {
+table, td, th {
     border: 3px solid #EB5E28;
     padding: 10px 25px;
     border-collapse: collapse;
@@ -115,7 +115,7 @@ table td > h2 + p {
     margin-bottom: 25px;
     font-weight: 200;
 }
-table ul hr {
+table hr {
     display: none;
 }
 table ul > li > p {
@@ -138,6 +138,7 @@ table ul > li > h3, table ul > li > h3 > a, table ul > li > span {
 }
 table ul > li > h3 > a:hover {
     color: #EB5E28;
+    transition: color .15s ease-in-out;
 }
 table ul li > h3 > span {
     font-size: 0.75em;
@@ -164,6 +165,7 @@ nav > ul > li {
 }
 nav > ul > li:hover {
     background-color: #312f2d;
+    transition: background-color .15s ease-in-out;
 }
 nav > ul > li > a {
     text-decoration: none;
@@ -171,4 +173,120 @@ nav > ul > li > a {
 }
 nav > ul > li > a:hover {
     color: #EB5E28;
+    transition: color .15s ease-in-out;
+}
+
+#main {
+    max-width: 728px;
+    margin: 50px auto;
+    padding: 20px 50px;
+    background-color: #252422;
+    border-radius: 50px;
+}
+#main h1 {
+    text-align: center;
+    color: #EB5E28;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+#main h1 > hr {
+    border-color: #EB5E28;
+    margin: 5px;
+}
+#main h2 {
+    position: relative;
+    width: 50%;
+    font-weight: 800;
+    font-size: 1.75em;
+    left: -50px;
+    padding: 15px 100px;
+    background-color: #403D39;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#main h2::before, #main h2::after {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    content: "⬤";
+    color: #252422;
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    background-color: #403D39;
+}
+#main h2::before {
+    top: -100px;
+    border-radius: 50% 50% 50% 0;
+}
+#main h2::after {
+    bottom: -100px;
+    border-radius: 0 50% 50% 50%;
+}
+#main p {
+    position: relative;
+    font-size: 1.25em;
+    font-weight: 300;
+    margin-bottom: 35px;
+    z-index: 2;
+}
+#main a:hover {
+    color: #EB5E28;
+    transition: color .15s ease-in-out;
+}
+#main table {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    background: none;
+    box-shadow: 0 0 25px 15px #403D39;
+    z-index: 2;
+}
+#main table thead th {
+    color: #EB5E28;
+}
+#main table tbody {
+    background-color: #403D39;
+}
+#main table.members tbody tr:hover {
+    background-color: #312f2d;
+    transition: background-color .15s ease-in-out;
+}
+#main table a {
+    text-decoration: none;
+}
+#main table img {
+    cursor: zoom-in;
+}
+#main table figcaption {
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: underline;
+}
+#main table td, #main table th {
+    text-align: center;
+    font-size: 1.25em;
+}
+#main h3 {
+    position: relative;
+    color: #EB5E28;
+    font-size: 1.5em;
+    font-weight: 700;
+    border-bottom: 1px solid #EB5E28;
+    z-index: 2;
+}
+#main ol {
+    display: flex;
+    margin-right: 50px;
+}
+#main li {
+    position: relative;
+    font-size: 1.25em;
+    z-index: 2;
+}
+#main li:not(:nth-child(1)) {
+    margin-left: auto;
 }

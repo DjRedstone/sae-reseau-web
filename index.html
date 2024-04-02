@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>La Bonne Assiette</title>
+    <link rel="stylesheet" href="styles/style2.css">
 </head>
 <body>
     <div id="main">
-        <h1>SAE Réseau Web semestre 2<br>Année 2023-2024</h1>
+        <h1>SAE Réseau Web - Semestre 2<hr>Année 2023-2024</h1>
         <h2>Présentation du groupe</h2>
-        <table>
+        <table class="members">
             <thead>
                 <tr>
+                    <th>Groupe</th>
                     <th>Prénom Nom</th>
                     <th>Implication</th>
                     <th>Style utilisé</th>
@@ -18,39 +20,73 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Mathis Chapelet</td>
-                    <td>Création de la page des boissons</td>
-                    <td>Page de style 1</td>
+                    <td>5.1</td>
+                    <th>Mathis Chapelet</th>
+                    <td><a href="boissons.html">Création de la page des boissons</a></td>
+                    <td><a href="styles/style1.css">Page de style 1</a></td>
                 </tr>
                 <tr>
-                    <td>Baptiste May</td>
-                    <td>Création de la page des entrées et des plats</td>
-                    <td>Page de style 2</td>
+                    <td>5.2</td>
+                    <th>Baptiste May</th>
+                    <td><a href="entrees-plats.html">Création de la page des entrées et des plats</a></td>
+                    <td><a href="styles/style2.css">Page de style 2</a></td>
                 </tr>
                 <tr>
-                    <td>Paul Lippevelde</td>
-                    <td>Création de la page des desserts</td>
-                    <td>Page de style 3</td>
+                    <td>5.1</td>
+                    <th>Paul Lippevelde</th>
+                    <td><a href="desserts.html">Création de la page des desserts</a></td>
+                    <td><a href="styles/style3.css">Page de style 3</a></td>
                 </tr>
             </tbody>
         </table>
         <h2>Présentation du projet</h2>
-        <p>
-
-        </p>
+        <h3>L'idée</h3>
+        <p>L'idée originale du projet était de réaliser une carte de restaurant en répartissant
+            les différentes parties dans plusieurs pages. Après un certains temps de réflexion,
+            la répartition Boissons / Plats / Desserts fût le choix le plus optimal.</p>
+        <h3>Le format</h3>
+        <p>Chaque membre du groupe s'est donc mis à écrire sa propre page en suivant tout de fois une même logique.
+            Les différentes catégories sont rangées dans un tableau, les produits sont stockés dans une liste
+            contenant à la fois le titre, une description et un prix.</p>
+        <h3>Images</h3>
+        <table>
+            <tr>
+                <td>
+                    <figure>
+                        <a href="https://cdn.discordapp.com/attachments/1198262251652665475/1222162145475563560/image0.jpg?ex=66153632&is=6602c132&hm=60e2c5b26d2b52b37652c289436e073f53fcaacc1b1e9391edffcdfd8594e8fb&">
+                            <img src="https://cdn.discordapp.com/attachments/1198262251652665475/1222162145475563560/image0.jpg?ex=66153632&is=6602c132&hm=60e2c5b26d2b52b37652c289436e073f53fcaacc1b1e9391edffcdfd8594e8fb&"
+                                 alt="Premières inspirations">
+                        </a>
+                        <figcaption>Premières inspirations</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure>
+                        <a href="https://cdn.discordapp.com/attachments/1198262251652665475/1222538903647682623/image.png?ex=66169514&is=66042014&hm=bfde8a289d4fb8acb73bdc77340d4341379803839065bf90ada57daf32497d5e&">
+                            <img src="https://cdn.discordapp.com/attachments/1198262251652665475/1222538903647682623/image.png?ex=66169514&is=66042014&hm=bfde8a289d4fb8acb73bdc77340d4341379803839065bf90ada57daf32497d5e&"
+                                 alt="Premier prototype">
+                        </a>
+                        <figcaption>Premier prototype</figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </table>
         <h2>Serveur web</h2>
         <h3>Outil utilisé</h3>
         <p>Nous avons choisis d'utiliser <a href="https://nginx.org/en/">NGINX</a> comme serveur web.
             En effet, c'est est un logiciel moderne, simple d’utilisation avec un système de
             configuration semblable à un langage de programmation. Il permet une
-            installation rapide sur plusieurs supports et de nombreuses fonctionnalités.</p>
+            installation rapide sur plusieurs supports et de nombreuses fonctionnalités simples et avancés.</p>
         <h3>Problèmes rencontrés</h3>
-        <p></p>
+        <p>Faisant déjà l'usage régulièrement de l'outils, nous n'avons pas eu beaucoup de problèmes.
+            Toutefois, ce n'était pas le cas pour tous. En effet, après une arrivée en cours d'année de Paul,
+            Nous avons dû lui expliquer comme fonctionne l'outils. Ce n'était pas chose facile.</p>
         <h2>Liens vers les pages</h2>
+        <h3>Les liens vers les pages HTML</h3>
         <ol>
-            <li><a href="boissons.html">Page 1 - Les Boissons</a></li>
-            <li><a href="entrees-plats.html">Page 2 - Les Entrées et Plats</a></li>
-            <li><a href="desserts.html">Page 3 - Les Desserts</a></li>
+            <li><a href="boissons.html">Les Boissons</a></li>
+            <li><a href="entrees-plats.html">Les Entrées et Plats</a></li>
+            <li><a href="desserts.html">Les Desserts</a></li>
         </ol>
     </div>
 </body>
